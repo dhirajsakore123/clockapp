@@ -4,21 +4,24 @@
     box-sizing: border-box;
 }
 .container{
-  
     height: 100vh;
     background-color: #3D087B;
     display: flex;
+    flex-direction: row;
+    border: 2px solid black; 
     position: relative;
+   
 }
+
 .container1{
    width:566px;
    height: 600px;
    position: absolute;
    top: 30px;
-   left: 200px;
+   left: 200px;  
     
-   
 }
+
 .box2{
   width: 566px;
   height: 330px;
@@ -60,19 +63,19 @@ label{
 
 }
 
- .box3{
+ #box3{
   position: relative;
   top: 20px;
   width: 566px;
   height: 77px;
   background-color:#663998de ;
   border-radius: 10px;
-  font-size:25px ;
+  font-size:22px ;
   font-weight: bold;
   color: white;
   padding:20px 30px 20px 40px ;
  }
- .box4{
+ #box4{
   position: relative;
      top: 30px;
     width: 299px;
@@ -82,6 +85,9 @@ label{
    color: white;
    padding: 15px 100px ;
    border-radius: 5px;
+  }
+  #box4:hover{
+    background-image:linear-gradient(270deg, #6E54EC , #FC5EFF );
   }
   .box5{
     position:relative;
@@ -103,9 +109,9 @@ label{
     position: absolute;
     top: 30px;
     left: 790px;
-  
-    
- }
+   
+    }
+
  .clock1{
   position:absolute;
  
@@ -133,7 +139,7 @@ label{
   background-color: white;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
   
  }
@@ -145,13 +151,15 @@ label{
  }
 
  .spn{
- position: relative;
- top: -30px;
+ position:relative;
+ top: 20px;
+right: 5px;
  font-size: 40px;
+ color: #8A11BF;
  
 
  }
- .message{
+ #message{
   position: relative;
   top: 150px;
   width: 536px;
@@ -166,11 +174,160 @@ label{
 
 }
 
-.pic{
+#pic{
   position: relative;
   top: 170px;
+  width: 534px;
+  height: 340px;
+background-image: url(./morning.svg);
+background-size: cover;
 }
  
+.tim{
+  background-image: url(./clockscreen2.png);
+  width: 80px;
+  font-size: 22px;
+  padding-left:15px ;
+  color: #8A11BF;
+  
+}
+.tim2{
+  background-image: url(./clockscreen.png);
+  width: 80px;
+  margin-left: 10px;
+}
+#hrs{
+  height: 60px;
+  font-size: 30px;
+ padding-left: 10px;
+ padding-top: 15px;
+ color: #8A11BF;
+}
+#min{
+  height: 60px;
+  font-size: 30px;
+ padding-left: 10px;
+ padding-top: 15px;
+ color: #8A11BF;
+}
+#sec{
+  height: 60px;
+  font-size: 30px;
+ padding-left: 10px;
+ padding-top: 15px;
+ color: #8A11BF;
+}
+#amorpm{
+  height: 60px;
+  font-size: 30px;
+ padding-left: 15px;
+ padding-top: 27px;
+ color: #fff;
+}
+
+
+/* ###########media############### */
+
+@media only screen and (max-width:500px) and (min-width:280px){
+  .container{
+    width: auto;
+    height: 1500px;
+  }
+  .container1{
+  width: 95%;
+    left:5vmin;
+     }
+     .container2{
+      width: 95%;
+  top: 85vh;
+  left: 1vmin;
+  }
+  .box2{
+     width: auto;
+     top: 30vmax;
+     right: 2vmin;
+  }
+  #wakeup{
+    width: inherit;
+  }
+  #box3{
+    width: inherit;
+    top: 73vh;
+ }
+ #box4{
+  top: 74vh;
+  box-sizing: border-box;
+  width: 35vmin;
+padding-bottom: 5px;
+  text-align: center;
+padding: 0;
+padding-top: 10px;
+}
+
+.box5{
+  width: 57vmin;
+  top: 68vh;
+left:35vmin;
+
+}
+
+.clo{
+  position: relative;
+  top: -70vmax;
+}
+#message{
+  position: relative;
+  top: -55vmax;
+  width: inherit;
+  left: 5vmin;
+}
+.clock3{
+  width:97vmin;
+}
+.clock2{
+  width:75vmin;
+}
+.clock1{
+  width:65vmin;
+}
+
+.tim{
+  width: inherit;
+   height: 10vmax;
+  font-size: inherit;
+
+}
+.tim1{
+  padding-right: 5vmin;
+  width: inherit;
+  font-size: inherit;
+}
+.tim2{
+  width: inherit;
+  height:22vmin;
+  font-size: inherit;
+}
+#pic{
+  top: -12vh;
+  left: 1vmin;
+  right: 2vmin;
+  width:95vmin ;
+  background-position: center;
+
+}
+
+
+
+
+}
+
+
+
+  
+
+ 
+
+
  
   
 
